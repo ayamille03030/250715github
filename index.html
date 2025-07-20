@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一個網頁</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Yang Tsai Ling - Personal Website</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>歡迎來到我的網站</h1>
-    <p>這是我的第一個推送到 GitHub 的網頁！</p>
+  
+  <div class="container-fluid p-5 my-5">
+    <header>楊采綾 Yang Tsai Ling</header>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="navbar-vertical">
+          <button class="nav-btn" onclick="scrollToSection('section1')">個人介紹</button>
+          <button class="nav-btn" onclick="scrollToSection('section2')">興趣專長</button>
+          <button class="nav-btn" onclick="scrollToSection('section3')">Spinning Corner</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="image-area">
+          <img class="img-fluid" src="waitaminet.jpeg" class="rounded" alt="myphoto"> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="section1" class="bg-light">
+    <div class="container">
+      <h2>個人介紹</h2>
+      <div class="row">
+        <div class="col-6">
+          <p>高雄、牡羊、大學畢(醫科x資工)、碩士班正在進行中......</p>
+          <p>樂觀的傢伙、喜歡不用出門的雨天和抹茶拿鐵</p>
+          <p>機車駕照路考考了三次:D 不擅長圓形球類運動</p>
+          <p>選了自然組因為社會科背不起來，但也很喜歡文史</p>
+          <p>\現在的目標是活著畢業(比耶)/</p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid" src="matchalatte.jpeg" class="rounded" alt="matchaphoto"> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="bg-secondary text-white">
+    <div class="container">
+      <h2>興趣專長</h2>
+      <h4>"No music no life."</h4>
+      <div class="row">
+        <div class="col-4">
+          <li style="list-style-type: square;">音樂
+            <ul><li>樂器</li>
+              <ul>
+                <li>打擊樂</li>
+                <li>吉他</li>
+              </ul>
+            </ul>
+            <ul><li>playlist</li>
+              <ul>
+                <li>MY FIRST STORY <a href="https://youtube.com/@myfirststoryofficialyoutub6386?si=Luo-Sy6iRpVq0aCV" target="_blank">link</a></li>
+                <li>神はサイコロを振らない <a href="https://youtube.com/@kamisai?si=swjPC-3j0NXHf3q2" target="_blank">link</a></li>
+                <li>ミセカイ <a href="https://youtube.com/@misekai?si=rqS6EvHGM-Mb9wq0" target="_blank">link</a></li>
+                <li>the GazettE <a href="https://youtube.com/@gazettesmej?si=Z5UaFEEvb5IKcdH4" target="_blank">link</a></li>
+                <li>the Brow Beat <a href="https://youtube.com/@thebrowbeat?si=ZI6lApI0dgTWkRzU" target="_blank">link</a></li>
+              </ul>
+            </ul>
+          </li>
+        </div>
+        <div class="col-4">
+          <li style="list-style-type: square;">語言
+            <ul>
+              <li>中文、台語</li>
+              <li>英文</li>
+              <li>一點日文</li>
+              <li>一點點法文</li>
+            </ul>
+          </li>
+          <li style="list-style-type: square;">程式(姑且會一些...)
+            <ul>
+              <li>python</li>
+              <li>基礎unix</li>
+              <li>C/C++</li>
+            </ul>
+          </li>
+          <li style="list-style-type: square;">其他興趣
+            <ul>
+              <li>動畫、電影</li>
+              <li>看F1賽事</li>
+              <li>解謎遊戲、密室逃脫</li>
+            </ul>
+          </li>
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="bg-dark text-white">
+    <h2>Spinning Corner</h2>
+    <p>contact email:</p> <a href="mailto:hohoho30303@iir.csie.ncku.edu.tw">hohoho30303@iir.csie.ncku.edu.tw</a> 
+    <p> </p>
+    <div class="spinner-border"></div>
+    <p>^^^ Don't worry, just let it spin</p>
+  </section>
+
+  <!--<button class="back-to-home" >TOP</button>
+  <button onclick="document.location='#home'">TOP</button>
+  <a href="#home" id="topButton" class="back-to-home-fixed">TOP</a>-->
+  <button id="topButton" class="back-to-home-fixed">TOP</button>
+
+
 </body>
 </html>

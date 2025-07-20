@@ -5,7 +5,8 @@ body {
     color: #EEEBD0;
 }
 header {
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
     font-size: 36px;
     font-weight: bold;
     color: #0D1F2D;
@@ -17,7 +18,7 @@ header {
 .navbar-vertical {
     position: absolute;
     top: 30%; /* aligned with middle of header text */
-    left: 10%;
+    left: 20%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -26,7 +27,8 @@ header {
     border-radius: 20px;
     padding: 10px 30px;
     border: none;
-    block-size: 50px;
+    block-size: 75px;
+    font-size: larger;
     background-color: #495057;
     color: #F7F7F2;
     transition: background-color 0.2s ease;
@@ -36,22 +38,49 @@ header {
 }
 .image-area {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateY(-50%);
 }
 .image-area img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
 }
 .img-fluid{
     position: relative;
     top: 0%;
     left: 0%;
-    size-adjust: 50%;
+}
+.image-area-section {
+    position: relative;
+    top: 45%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+.image-area-section img {
+    max-width: 60%;
+    height: auto;
 }
 section {
     margin-top: 20vh;
     padding: 50px;
 }
-
+.col-6 {
+    font-size: large;
+}
+.col-3 {
+    margin:50px;
+    font-size: large;
+}
+#myBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #495057;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+#myBtn:hover{
+    background-color: #5FA8D3;
+}
